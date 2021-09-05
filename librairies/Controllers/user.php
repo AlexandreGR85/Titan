@@ -2,7 +2,7 @@
 
 namespace Controllers;
 
-class User extends Controller{
+class user extends Controller{
 
     protected $modelName = \Models\users::class;
 
@@ -21,16 +21,16 @@ class User extends Controller{
         {
             //au moins un des champs obligatoires non rempli
             \Session::addFlash('error', 'au moins un des champs obligatoires non rempli !');
-          
+            \Http::redirectBack(WWW_URL);
         }
         
-        //test firstname et lastname non numérique
+        //test name et surname non numérique
         if (ctype_digit($_POST['name']) || ctype_digit($_POST['surname']))
         {
             //au moins le nom ou le prénom est numérique
             \Session::addFlash('error', 'nom et prénom ne peuvent pas être numérique !');
             
-            
+            \Http::redirectBack(WWW_URL);
         }
         
         //vérifier le format de l'email
@@ -39,8 +39,15 @@ class User extends Controller{
         {
             //l'email n'est pas au bon format
             \Session::addFlash('error', 'l\'email n\'est pas au bon format !');
-            
+            \Http::redirectBack(WWW_URL);
         }
+
+        if(isset($_POST['subscribe']))
+        {
+            $data['Newsletter'] = 'oui';
+
+        }else{ $data['Newsletter'] = 'non';}
+
         
         
         //traiter le formulaire
@@ -51,6 +58,7 @@ class User extends Controller{
         //si on arrive ici on va pouvoir insérer
 
         $this->model->insert($data);
+        \Http::redirect(WWW_URL."index.php?controller=Home&task=success");
         
     }
     

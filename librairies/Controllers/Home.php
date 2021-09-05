@@ -10,6 +10,18 @@ class Home extends Controller
         \Renderer::show($this->tplVars);
         
     }
+
+    public function success() {
+       
+        //affichage
+       
+        $this->tplVars = [];
+        $this->tplVars = $this->tplVars + ['EXERCICE_ADIMEO/librairie/Controllers/welcome'];
+        
+        \Renderer::showSuccess($this->tplVars);
+        
+    }
+
     
     
 }

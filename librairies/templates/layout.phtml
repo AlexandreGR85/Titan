@@ -40,6 +40,8 @@
 	<!--******************************* MAIN PAGE HOME ********************************************************-->
 	
 	<main class="container">
+
+	
 		
 		<form class='form' action="<?= $tplVars['WWW_URL']; ?>index.php?controller=user&task=create" method="POST">
 			
@@ -48,22 +50,21 @@
 			<div class="logo"></div>
 			<h1>Inscrivez-vous pour faire partie de premiers touristes de Titan, la fameuse lune de Saturne !</h1>
 			
-			<label class="nameLab">Prénom</label>
+			<label class="nameLab" for='name'>Prénom</label>
 			<input class="nameInp" name="name" type="text">
 		
 		
-			<label class="surnameLab">Nom</label>
+			<label class="surnameLab" for='surname'>Nom</label>
 			<input class="surnameInp" name="surname" type="text" required>
 		
 		
-			<label class="emailLab">Email</label>
+			<label class="emailLab" for='email'>Email</label>
 			<input class="emailInp" name="email" type="text" required>
 		
 
 		
-			<input class="check" type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
 			<label class="subscribeLab" for="subscribeNews">J'accepte de m'inscrire à la newsletter de Titan</label>
-		
+			<input class="check" type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
 		
 			<button class="button">Valider mon inscription</button>
 			

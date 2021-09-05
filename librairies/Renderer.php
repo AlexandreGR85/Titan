@@ -12,10 +12,15 @@ class Renderer {
      */
     public static function show(array $tplVars = [])
     {
-        ob_start();
+       
         
         require('librairies/templates/layout.phtml');
 
     }
     
+    public static function showSuccess(array $tplVars = []){
+
+        require('librairies/templates/layoutSuccess.phtml');
+
+    }
 }

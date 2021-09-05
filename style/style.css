@@ -37,8 +37,8 @@ TOOLS
 
 .container{
     position: absolute;
-    width: 1440px;
-    height: 900px;
+    width: 144rem;
+    height: 90rem;
     background: #FFFFFF;
 }
   .form{
@@ -63,31 +63,31 @@ TOOLS
 
 form h1{
     position: absolute;
-    width: 700px;
-    height: 60px;
-    left: 370px;
-    top: 260px;
+    width: 70rem;
+    height: 6rem;
+    left: 37rem;
+    top: 26rem;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
     text-align: center;
     color: #000000;
 }
 
 .nameLab{
     position: absolute;
-    width: 270px;
-    height: 30px;
-    left: 585px;
-    top: 380px;
+    width: 27rem;
+    height: 3rem;
+    left: 58.5rem;
+    top: 38rem;
 
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
     display: flex;
     align-items: center;
     color: #000000;
@@ -95,26 +95,26 @@ form h1{
 
 .nameInp{
     position: absolute;
-    width: 270px;
-    height: 40px;
-    left: 585px;
-    top: 410px;
+    width: 27rem;
+    height: 4rem;
+    left: 58.5rem;
+    top: 41rem;
 
     background: #FFFFFF;
-    border: 1px solid #000000;
+    border: 0.1rem solid #000000;
 }
 
 .surnameLab{
     position: absolute;
-    width: 270px;
-    height: 30px;
-    left: 585px;
-    top: 475px;
+    width: 27rem;
+    height: 3rem;
+    left: 58.5rem;
+    top: 47.5rem;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
     display: flex;
     align-items: center;
     color: #000000;
@@ -122,26 +122,26 @@ form h1{
 
 .surnameInp{
     position: absolute;
-    width: 270px;
-    height: 40px;
-    left: 585px;
-    top: 505px;
+    width: 27rem;
+    height: 4rem;
+    left: 58.5rem;
+    top: 50.5rem;
     background: #FFFFFF;
-    border: 1px solid #000000;
+    border: 0.1rem solid #000000;
 
 }
 
 .emailLab{
     position: absolute;
-    width: 270px;
-    height: 30px;
-    left: 585px;
-    top: 570px;
+    width: 27rem;
+    height: 3rem;
+    left: 58.5rem;
+    top: 57rem;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
     display: flex;
     align-items: center;
     color: #000000;
@@ -149,35 +149,35 @@ form h1{
 
 .emailInp{
     position: absolute;
-    width: 270px;
-    height: 40px;
-    left: 585px;
-    top: 600px;
+    width: 27rem;
+    height: 4rem;
+    left: 58.5rem;
+    top: 60rem;
     background: #FFFFFF;
-    border: 1px solid #000000;
+    border: 0.1rem solid #000000;
 }
 
 .check{
     position: absolute;
-    width: 20px;
-    height: 20px;
-    left: 530px;
-    top: 675px;
+    width: 2rem;
+    height: 2rem;
+    left: 53rem;
+    top: 67.5rem;
     background: #FFFFFF;
-    border: 1px solid #000000;
+    border: 0.1rem solid #000000;
 }
 
 .subscribeLab{
     position: absolute;
-    width: 340px;
-    height: 40px;
-    left: 570px;
-    top: 665px;
+    width: 34rem;
+    height: 4rem;
+    left: 57rem;
+    top: 66.5rem;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
     display: flex;
     align-items: center;
     color: #000000;
@@ -195,7 +195,7 @@ form h1{
     padding: 0;
     margin: 0;
     background: #DB6708;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
     width: 35rem;
     height: 4rem;
     font-family: Roboto;
@@ -205,4 +205,19 @@ form h1{
     line-height: 1.9rem;
     text-transform: uppercase;
     color:#FFFFFF;
+}
+
+.message{
+    position: absolute;
+    width: 65rem;
+    height: 6rem;
+    left: 40rem;
+    top: 25rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #000000;
 }
