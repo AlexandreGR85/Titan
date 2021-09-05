@@ -1,0 +1,208 @@
+/* ***********************************************************
+FONTS
+***************************************************************** */
+
+@font-face {
+    font-family: 'roboto';
+    src: url(fonts/Roboto-Regular.ttf) format('opentype');
+    font-style: normal;
+    font-weight: normal;
+    src: url(fonts/Roboto-Bold.ttf) format('opentype');
+    font-style: normal;
+    font-weight: bold;
+
+}
+/* *****************************************************************
+TOOLS
+***************************************************************** */
+* {
+    box-sizing: border-box;
+    /* On spécifie que la largeur (width) de chaque boîte comprend le padding et la bordure (par défaut, c'est seulement la largeur du contenu) */ }
+  
+  html {
+    font-size: 62.5%;
+    /* 1rem = 10px (la formule est 10/16*100) la taille par défaut étant 16px */ }
+  
+  body {
+    font-size: 1.6rem;
+    /* on remets la taille du texte par défaut pour le body à 16px en utilisant les rem comme unité) */ }
+  img {
+    max-width: 100%; }
+
+
+  
+  /* *****************************************************************
+  ELEMENTS
+  ***************************************************************** */
+
+.container{
+    position: absolute;
+    width: 1440px;
+    height: 900px;
+    background: #FFFFFF;
+}
+  .form{
+    position:absolute;
+    top:4rem;
+    width: 144rem;
+    height: 90rem;
+    margin: auto;
+    display:flex;
+    flex-direction: column;
+}
+
+.logo{
+    position: relative;
+    width: 38.9rem;
+    height: 17.825rem;
+    left: 52.5rem;
+    top: 4rem;
+    background: url(./uploads/logo.jpg), no-repeat;
+    background-size: cover;
+}
+
+form h1{
+    position: absolute;
+    width: 700px;
+    height: 60px;
+    left: 370px;
+    top: 260px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #000000;
+}
+
+.nameLab{
+    position: absolute;
+    width: 270px;
+    height: 30px;
+    left: 585px;
+    top: 380px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.nameInp{
+    position: absolute;
+    width: 270px;
+    height: 40px;
+    left: 585px;
+    top: 410px;
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+}
+
+.surnameLab{
+    position: absolute;
+    width: 270px;
+    height: 30px;
+    left: 585px;
+    top: 475px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.surnameInp{
+    position: absolute;
+    width: 270px;
+    height: 40px;
+    left: 585px;
+    top: 505px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+
+}
+
+.emailLab{
+    position: absolute;
+    width: 270px;
+    height: 30px;
+    left: 585px;
+    top: 570px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.emailInp{
+    position: absolute;
+    width: 270px;
+    height: 40px;
+    left: 585px;
+    top: 600px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+}
+
+.check{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 530px;
+    top: 675px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+}
+
+.subscribeLab{
+    position: absolute;
+    width: 340px;
+    height: 40px;
+    left: 570px;
+    top: 665px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+
+
+.button{
+    position: absolute;
+    width: 35rem;
+    height: 4rem;
+    left: 54.5rem;
+    top: 75.3rem;
+    border: none;
+    padding: 0;
+    margin: 0;
+    background: #DB6708;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 35rem;
+    height: 4rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    text-transform: uppercase;
+    color:#FFFFFF;
+}
